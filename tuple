@@ -1,0 +1,14 @@
+tuples_list = [(2,5), (1,2), (4,4), (2,3),(2,1)]
+
+
+for i in range(len(tuples_list)):
+    for j in range(0, len(tuples_list)-i-1):
+        
+        if tuples_list[j][-1] > tuples_list[j+1][-1]:
+            
+            temp = tuples_list[j]
+            tuples_list[j] = tuples_list[j+1]
+            tuples_list[j+1] = temp
+
+
+print("Sorted list of tuples: ", tuples_list)
